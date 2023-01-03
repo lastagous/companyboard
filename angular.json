@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/reset.css",
               "bootstrap/dist/css/bootstrap-utilities.css",
               "primeicons/primeicons.css",
               "primeng/resources/themes/arya-orange/theme.css",
