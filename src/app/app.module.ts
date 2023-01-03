@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TopComponent } from './page/top/top.component';
 import { MembersComponent } from './page/members/members.component';
 
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,12 @@ import { MembersComponent } from './page/members/members.component';
     HeaderComponent,
     FooterComponent,
     TopComponent,
-    MembersComponent
+    MembersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MenubarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
