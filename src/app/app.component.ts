@@ -13,5 +13,5 @@ export class AppComponent implements OnInit {
     this.primengConfig.ripple = true;
   }
   
-  title = 'canpanyboard'; 
+  title = 'companyboard'; 
 }
