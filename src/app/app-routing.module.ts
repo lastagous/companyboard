@@ -5,7 +5,9 @@ import { TopComponent } from './page/top/top.component';
 
 const routes: Routes = [
   { path: 'top', component: TopComponent },
-  { path: 'members', component: MembersComponent }
+  { path: 'members', component: MembersComponent },
+  { path: '', redirectTo: '/top', pathMatch: 'full' },
+  { path: '**', redirectTo: '/top', pathMatch: 'full' },
 ];
 
 @NgModule({
