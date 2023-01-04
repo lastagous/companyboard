@@ -9,6 +9,7 @@ import { TopComponent } from './page/top/top.component';
 import { MembersComponent } from './page/members/members.component';
 
 import { MenubarModule } from 'primeng/menubar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MenubarModule } from 'primeng/menubar';
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
