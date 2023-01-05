@@ -21,7 +21,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url(/assets/movie_cover.png) repeat center top;
+	background: url(../../../assets/movie_cover.png) repeat center top;
 	background-size: 2px 2px;
 	z-index: 2;
 }
