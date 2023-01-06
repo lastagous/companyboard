@@ -10,6 +10,7 @@ import { MembersComponent } from './page/members/members.component';
 
 import { MenubarModule } from 'primeng/menubar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { XivapiClientModule } from '@xivapi/angular-client';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     MenubarModule,
     NgbModule,
+    XivapiClientModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
