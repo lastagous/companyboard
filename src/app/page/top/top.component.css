@@ -1,6 +1,6 @@
 .movie_area {
 	position: relative;
-  min-height: 900px;
+  min-height: 100vh;
   overflow: hidden;
 }
 
