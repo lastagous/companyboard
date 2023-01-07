@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
+import { XivapiStore } from './store/xivapi.store';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private primengConfig: PrimeNGConfig) {}
+  constructor(private primengConfig: PrimeNGConfig, private xivapiStore: XivapiStore) {}
   
   ngOnInit() {
     this.primengConfig.ripple = true;

@@ -11,6 +11,7 @@ import { MembersComponent } from './page/members/members.component';
 import { MenubarModule } from 'primeng/menubar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { XivapiClientModule } from '@xivapi/angular-client';
+import { XivapiStore } from './store/xivapi.store';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { XivapiClientModule } from '@xivapi/angular-client';
     NgbModule,
     XivapiClientModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    XivapiStore,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
