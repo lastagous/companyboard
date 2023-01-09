@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { XivapiStore } from 'src/app/store/xivapi.store';
 
 @Component({
   selector: 'app-members',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private xivapiStore: XivapiStore) { }
 
   ngOnInit(): void {
+  }
+
+  public get freeCompanyMembers() {
+    return this.xivapiStore.freeCompany.FreeCompanyMembers;
   }
 
 }

@@ -1,0 +1,46 @@
+.members {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url(../../../assets/member_background.png)
+}
+
+.members::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../../../assets/movie_cover.png) repeat center top;
+	background-size: 2px 2px;
+}
+
+.panel-content {
+	display: flex;
+  justify-content: center;
+	padding-top: 60px;
+}
+
+.card {
+	background: var(--surface-a);
+	width: 200px;
+	height: 400px;
+	box-shadow: 4px 4px 12px -8px var(--primary-color);
+	border-radius: 4px;
+	overflow: hidden;
+	border-top: solid 2px var(--primary-color);
+	border-bottom: solid 2px var(--primary-color);
+	transition: width 0.5s;
+	display: flex;
+	justify-content: center;
+}
+
+.card:hover {
+	width: 270px;
+}
+
+.p-chip .p-chip-text {
+	margin-top: none;
+  margin-bottom: none;
+}

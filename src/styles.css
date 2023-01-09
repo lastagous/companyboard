@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.p-dataview-content {
+  background: none !important;
+}
+
+.p-grid {
+	gap: 16px;
+	justify-content: center;
+	width: 1200px;
+}
+
+.p-chip img {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0;
+}
+
+.p-chip .p-chip-text {
+	margin-top: 0;
+  margin-bottom: 0;
+}

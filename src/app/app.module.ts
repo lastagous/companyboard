@@ -8,10 +8,14 @@ import { FooterComponent } from './component/footer/footer.component';
 import { TopComponent } from './page/top/top.component';
 import { MembersComponent } from './page/members/members.component';
 
+import { XivapiStore } from './store/xivapi.store';
+
 import { MenubarModule } from 'primeng/menubar';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { DataViewModule } from 'primeng/dataview';
+import { ChipModule } from 'primeng/chip';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { XivapiClientModule } from '@xivapi/angular-client';
-import { XivapiStore } from './store/xivapi.store';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,9 @@ import { XivapiStore } from './store/xivapi.store';
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
+    ScrollPanelModule,
+    DataViewModule,
+    ChipModule,
     NgbModule,
     XivapiClientModule.forRoot(),
   ],
