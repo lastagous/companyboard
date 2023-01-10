@@ -10,12 +10,13 @@
 }
 
 .p-chip img {
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 16px;
+	height: 16px;
 	margin-right: 0;
 }
 
 .p-chip .p-chip-text {
 	margin-top: 0;
   margin-bottom: 0;
+	font-size: 12px;
 }

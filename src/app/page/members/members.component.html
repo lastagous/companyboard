@@ -5,7 +5,7 @@
 				<ng-template let-fcMember pTemplate="gridItem">
 					<div class="card" hover-class="cover">
 						<div class="grid-content">
-							<img class="avatar" src="{{ fcMember.Avatar }}">
+							<img class="avatar" src="{{fcMember.Character?.Portrait }}">
 							<p-chip label="{{ fcMember.Rank }}" image="{{ fcMember.RankIcon }}" styleClass="p-mr-2 custom-chip"></p-chip>
 							<div class="name">
 								{{ fcMember.Name }}
