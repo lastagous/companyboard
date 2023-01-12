@@ -4,12 +4,14 @@
 			<p-dataView [value]="freeCompanyMembers" [loading]="false" layout="grid">
 				<ng-template let-fcMember pTemplate="gridItem">
 					<div class="card" hover-class="cover">
-						<div class="grid-content">
-							<img class="avatar" src="{{fcMember.Character?.Portrait }}">
-							<p-chip label="{{ fcMember.Rank }}" image="{{ fcMember.RankIcon }}" styleClass="p-mr-2 custom-chip"></p-chip>
-							<div class="name">
-								{{ fcMember.Name }}
-							</div>
+						<div class="avatar">
+							<img src="{{fcMember.Character?.Portrait }}">
+						</div>
+						<!-- <div class="rank">
+							<p-chip label="{{ fcMember.Rank }}" image="{{ fcMember.RankIcon }}" ></p-chip>
+						</div> -->
+						<div class="name">
+							<span>{{ fcMember.Name }}</span>
 						</div>
 					</div>
 				</ng-template>

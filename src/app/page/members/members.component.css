@@ -20,9 +20,11 @@
 	display: flex;
   justify-content: center;
 	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .card {
+	position: relative;
 	background: var(--surface-a);
 	width: 200px;
 	height: 400px;
@@ -31,16 +33,27 @@
 	overflow: hidden;
 	border-top: solid 2px var(--primary-color);
 	border-bottom: solid 2px var(--primary-color);
-	transition: width 0.5s;
-	display: flex;
-	justify-content: center;
+	transition: width 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
 	width: 270px;
 }
 
-.p-chip .p-chip-text {
-	margin-top: none;
-  margin-bottom: none;
+.avatar {
+	position: absolute;
+  width: 290px;
+}
+
+.name {
+	position: absolute;
+		bottom: 8px;
+		white-space: nowrap;
+    font-size: 32px;
+    font-family: 'Economica', sans-serif !important;
+		color: var(--primary-color);
+    text-shadow: 3px 3px 5px rgb(14 51 29 / 50%);
 }
