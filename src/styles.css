@@ -9,7 +9,11 @@
 	width: 1200px;
 }
 
-/* .p-chip img {
+.p-chip {
+	border: solid 1px var(--text-color);
+}
+
+.p-chip img {
 	width: 16px;
 	height: 16px;
 	margin-right: 0;
@@ -19,4 +23,4 @@
 	margin-top: 0;
   margin-bottom: 0;
 	font-size: 12px;
-} */
+}

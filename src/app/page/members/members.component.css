@@ -48,12 +48,17 @@
   width: 290px;
 }
 
+.rank {
+	position: absolute;
+	bottom: 48px;
+}
+
 .name {
 	position: absolute;
-		bottom: 8px;
-		white-space: nowrap;
-    font-size: 32px;
-    font-family: 'Economica', sans-serif !important;
-		color: var(--primary-color);
-    text-shadow: 3px 3px 5px rgb(14 51 29 / 50%);
+	bottom: 8px;
+	white-space: nowrap;
+  font-size: 32px;
+  font-family: 'Economica', sans-serif !important;
+	color: var(--primary-color);
+  text-shadow: 3px 3px 5px rgb(14 51 29 / 50%);
 }
