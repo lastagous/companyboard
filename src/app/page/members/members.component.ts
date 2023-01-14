@@ -7,6 +7,7 @@ import { XivapiStore } from 'src/app/store/xivapi.store';
   styleUrls: ['./members.component.css']
 })
 export class MembersComponent implements OnInit {
+  isPickupModal = false;
 
   constructor(private xivapiStore: XivapiStore) { }
 
@@ -15,6 +16,15 @@ export class MembersComponent implements OnInit {
 
   public get freeCompanyMembers() {
     return this.xivapiStore.freeCompany.FreeCompanyMembers;
+  }
+
+  public onCardClick() {
+    console.log("onclick");
+    this.isPickupModal = true;
+  }
+
+  public closePickUpModal() {
+    this.isPickupModal = false;
   }
 
 }

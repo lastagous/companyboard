@@ -3,7 +3,7 @@
 		<div class="panel-content">
 			<p-dataView [value]="freeCompanyMembers" [loading]="false" layout="grid">
 				<ng-template let-fcMember pTemplate="gridItem">
-					<div class="card" hover-class="cover">
+					<div class="card" hover-class="cover" (click)="onCardClick()">
 						<div class="avatar">
 							<img src="{{fcMember.Character?.Portrait }}">
 						</div>
@@ -19,3 +19,6 @@
 		</div>
   </p-scrollPanel>
 </div>
+<p-blockUI [blocked]="isPickupModal">
+	<button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-text" (click)="closePickUpModal()"></button>
+</p-blockUI>

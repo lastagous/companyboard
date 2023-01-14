@@ -7,6 +7,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { DataViewModule } from 'primeng/dataview';
 import { ChipModule } from 'primeng/chip';
+import { BlockUIModule } from 'primeng/blockui';
+import { ButtonModule } from 'primeng/button';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { XivapiClientModule } from '@xivapi/angular-client';
@@ -36,6 +38,8 @@ import { environment } from 'src/environments/environment';
     ScrollPanelModule,
     DataViewModule,
     ChipModule,
+    BlockUIModule,
+    ButtonModule,
     NgbModule,
     XivapiClientModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
