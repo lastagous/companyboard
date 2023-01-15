@@ -3,9 +3,9 @@
 		<div class="panel-content">
 			<p-dataView [value]="freeCompanyMembers" [loading]="false" layout="grid">
 				<ng-template let-fcMember pTemplate="gridItem">
-					<div class="card" hover-class="cover" (click)="onCardClick()">
+					<div class="card" hover-class="cover" (click)="onCardClick(fcMember)">
 						<div class="avatar">
-							<img src="{{fcMember.Character?.Portrait }}">
+							<img src="{{ fcMember.Character?.Portrait }}">
 						</div>
 						<div class="rank">
 							<p-chip label="{{ fcMember.Rank }}" image="{{ fcMember.RankIcon }}" ></p-chip>
@@ -20,5 +20,46 @@
   </p-scrollPanel>
 </div>
 <p-blockUI [blocked]="isPickupModal">
-	<button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-text" (click)="closePickUpModal()"></button>
+	<div class="pickup-content">
+		<div class="pickup-left-pane">
+			<div class="pickup-avatar">
+				<img [src]="getPickUpImage()">
+			</div>
+		</div>
+		<div class="pickup-right-pane">
+			<div class="pickup-name">
+			 <div class="pickup-name-first">
+				{{ getPickupModelFirstName() }}
+			 </div>
+			 <div class="pickup-name-family">
+				{{ getPickupModelFamilyName() }}
+			 </div>
+			</div>
+			<div class="pickup-close">
+				<button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-text" (click)="closePickUpModal()"></button>
+			</div>
+			<div class="pickup-gallery">
+				<p-galleria 
+					[value]="albums"
+					[responsiveOptions]="responsiveOptions"
+					[containerStyle]="{'max-width': '640px', 'margin-top':'2em'}"
+					[numVisible]="5"
+					[circular]="true"
+					[showItemNavigators]="true"
+					[showThumbnails]="false"
+					[showIndicators]="true"
+					[showItemNavigatorsOnHover]="true"
+					[showIndicatorsOnItem]="true"> 
+					<ng-template pTemplate="item" let-album>
+						<img [src]="album.imageUrl" style="width: 100%; display: block;" />
+					</ng-template>
+					<ng-template pTemplate="thumbnail" let-album>
+						<div class="grid grid-nogutter justify-content-center">
+							<img [src]="album.imageUrl" style="display: block;" />
+						</div>
+					</ng-template>
+				</p-galleria>
+			</div>
+		</div>
+	</div>
 </p-blockUI>

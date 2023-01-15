@@ -9,6 +9,7 @@ import { DataViewModule } from 'primeng/dataview';
 import { ChipModule } from 'primeng/chip';
 import { BlockUIModule } from 'primeng/blockui';
 import { ButtonModule } from 'primeng/button';
+import { GalleriaModule } from 'primeng/galleria';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { XivapiClientModule } from '@xivapi/angular-client';
@@ -40,6 +41,7 @@ import { environment } from 'src/environments/environment';
     ChipModule,
     BlockUIModule,
     ButtonModule,
+    GalleriaModule,
     NgbModule,
     XivapiClientModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),

@@ -62,3 +62,49 @@
 	color: var(--primary-color);
   text-shadow: 3px 3px 5px rgb(14 51 29 / 50%);
 }
+
+.pickup-content {
+	width: 1200px;
+  display: flex;
+}
+
+.pickup-left-pane {
+	width: 600px;
+  margin-right: 16px;
+}
+
+.pickup-right-pane {
+	position: relative;
+	width: 584px;
+}
+
+.pickup-close {
+	position: absolute;
+  right: 0px;
+}
+
+.pickup-name {
+	position: relative;
+	white-space: nowrap;
+  font-size: 128px;
+  font-family: 'Alfa Slab One', cursive;
+	color: var(--primary-color);
+	text-shadow: 3px 3px 0px var(--primary-50);
+}
+
+.pickup-name-first {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.pickup-name-family {
+	position: absolute;
+	right: 0px;
+	top: 128px;
+}
+
+.pickup-gallery {
+	position: absolute;
+  bottom: 16px;
+}
