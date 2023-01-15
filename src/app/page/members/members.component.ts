@@ -37,6 +37,10 @@ export class MembersComponent implements OnInit {
     return this.xivapiStore.freeCompany.FreeCompanyMembers;
   }
 
+  public isLoading() {
+    return this.xivapiStore.freeCompany.FreeCompanyMembers.length !== this.xivapiStore.characters.size;
+  }
+
   public onCardClick(fcMember: FreeCompanyMemberModel) {
     this.pickupModel = fcMember;
     this.albums = this.firebaseStore.albumList.filter(album => album.lodestoneId === String(this.pickupModel.ID));
