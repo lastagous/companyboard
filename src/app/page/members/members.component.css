@@ -104,6 +104,28 @@
 	top: 128px;
 }
 
+.pickup-job-icon {
+	width: 24px;
+}
+
+.pickup-jobs {
+	position: relative;
+  top: 320px;
+}
+
+.pickup-jobs-line {
+	display: flex;
+}
+
+.pickup-role {
+	display: flex;
+	margin-right: 16px;
+}
+
+.pickup-job {
+	text-align: center;
+}
+
 .pickup-gallery {
 	position: absolute;
   bottom: 16px;

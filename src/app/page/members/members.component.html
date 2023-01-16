@@ -38,6 +38,84 @@
 			<div class="pickup-close">
 				<button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-text" (click)="closePickUpModal()"></button>
 			</div>
+		  <div class="pickup-jobs">
+				<div class="pickup-jobs-line">
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let tank of tankJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ tank.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ tank.level }}
+							</div>
+						</div>
+					</div>
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let healer of healerJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ healer.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ healer.level }}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pickup-jobs-line">
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let melee of meleeJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ melee.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ melee.level }}
+							</div>
+						</div>
+					</div>
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let pRange of pRangeJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ pRange.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ pRange.level }}
+							</div>
+						</div>
+					</div>
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let mRange of mRangeJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ mRange.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ mRange.level }}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pickup-jobs-line">
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let crafter of crafterJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ crafter.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ crafter.level }}
+							</div>
+						</div>
+					</div>
+					<div class="pickup-role">
+						<div class="pickup-job" *ngFor="let gatherer of gathererJobList">
+							<div class="pickup-job-icon">
+								<img src="{{ gatherer.icon }}">
+							</div>
+							<div class="pickup-job-Level">
+								{{ gatherer.level }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
 			<div class="pickup-gallery">
 				<p-galleria 
 					[value]="albums"
