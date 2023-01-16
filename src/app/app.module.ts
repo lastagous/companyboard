@@ -20,6 +20,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { TopComponent } from './page/top/top.component';
 import { MembersComponent } from './page/members/members.component';
+import { HousingComponent } from './page/housing/housing.component';
 import { XivapiStore } from './store/xivapi.store';
 import { FirebaseStore } from './store/firebase.store';
 import { environment } from 'src/environments/environment';
@@ -31,6 +32,7 @@ import { environment } from 'src/environments/environment';
     FooterComponent,
     TopComponent,
     MembersComponent,
+    HousingComponent,
   ],
   imports: [
     BrowserModule,

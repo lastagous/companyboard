@@ -10,13 +10,18 @@ export class HeaderComponent implements OnInit {
   private _menuItems: MenuItem[] = [
     {
       label:'Top',
-      icon:'pi pi-fw pi-home',
+      icon:'pi pi-fw pi-desktop',
       routerLink: ['/top']
     },
     {
       label:'Members',
       icon:'pi pi-fw pi-user',
       routerLink: ['/members']
+    },
+    {
+      label:'Housing',
+      icon:'pi pi-fw pi-home',
+      routerLink: ['/housing']
     }
   ];
 
