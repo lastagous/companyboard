@@ -1,0 +1,42 @@
+.housing {
+	display: flex;
+	overflow: hidden;
+	height: 100%;
+}
+
+.housing-pane {
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	transition: width 0.5s ease-out, filter 0.5s ease;
+}
+
+.housing:hover .housing-pane:not(:hover) {
+	filter: brightness(50%);
+	width: 70%;
+}
+
+.housing-left-pane {
+	background: url(../../../assets/housing_namonaki.png) no-repeat top center;
+}
+
+.housing-left-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+}
+
+.housing-left-link {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.housing-right-pane {
+	background: url(../../../assets/housing_namonaki_bekkan.png) no-repeat center center;
+}
